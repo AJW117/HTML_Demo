@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>omnifood.net</title>
+    </head>
+    <style>
+
+     *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box; 
+     }
+
+     h1,h2,h3{
+           font-weight: 300;
+           text-transform: uppercase;
+        
+    
+     }
+        
+       
+
+     html, body{
+         color:#fff;
+         font-family: 'Lato', 'Arial', sans-serif;
+         font-weight: 300;
+         font-size: 200px;
+         text-rendering: optimizeLegibility;
+     }
+    
+     .header{
+         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                                 url(OmniFoodBackgroundBetter.jpg);
+        background-size: cover;
+        height: 100vh;
+        background-attachment: fixed;
+     }
+
+     .logo{
+        width: 215px;
+        height: 145px;
+        margin-right: 185px;
+        padding-left: 100px;
+        padding-top: 25px;
+       
+     }
+
+
+     .row{
+         max-width: 1140px;
+         margin: 0 auto;
+         display:flex;
+     }
+        
+         
+    ul{
+        display:flex;
+     }
+
+     .hero-text-box{
+           width: 1140px;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+     }
+
+     .btn{
+         display: inline-block;
+         padding: 10px 30px;
+         font-weight: 300;
+         text-decoration: none;
+         border-radius: 200px;
+         color: #fff;
+         border: 1px solid #cf6d17;
+         
+      }
+
+     .btn:hover, btn:active {
+         background-color: #cf6d17;
+         color: #fff;
+     }
+
+     
+    a{
+        background-color: transparent;
+        color: #fff;
+        text-decoration: none ;
+        padding-bottom: 1px solid #cf6d17;
+        transition: border-bottom 0.2s, color 0.2s;
+
+
+     }
+
+     a:hover{
+        text-decoration: underline;
+        text-decoration-color: #cf6d17;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 7px;
+
+     }
+
+     
+     
+
+     .main-nav{
+        float: right;
+         margin-top: 30px;
+         cursor: pointer;
+         color: #fff;
+         padding: 25px;
+      }
+
+
+
+
+     body{
+        font-size: 18px;
+     }
+
+
+
+     ul.horizontal-list{
+        list-style-type: none;
+        color: #fff;
+        display: flex;
+     }
+
+
+     ul.horizontal-list li{
+
+           margin-right: 5px;
+           padding-left: 135px;
+           white-space: nowrap;
+     }
+
+     .btn-full{
+        background-color: #cf6d17;
+     }
+
+     .btn-ghost{
+         color: #cf6d17;
+         border-color: #cf6d17; 
+        }
+
+       
+
+
+     h2{
+       text-decoration: underline;
+       text-decoration-color: #cf6d17;
+       text-underline-position: below;
+       text-underline-offset: 25px;
+       text-indent: 300px;
+       font-size: 40px;
+     }
+
+     h2:after{
+        display: block;
+        height: 2px;
+        width: 100px;
+        background-color: #cf6d17;
+        content: "";
+        margin: auto;
+        margin-top: 30px;
+
+     }
+
+
+    .features{
+        padding: 80px;
+        color: rgb(107, 107, 107);
+        text-align: center;
+        }
+
+     
+     .span-1-of-4{
+        text-align: left;
+        padding: 5px;
+       }
+
+     
+     h3{
+        padding-bottom: 15px;
+        
+     }
+     
+     img{
+        width: 100;
+        height: 100px;
+       
+    }
+
+    .meal-showcase{
+        width: 100%;
+        zoom: 1;
+    }
+
+
+    li{
+        list-style-type: none;
+    }
+
+
+    .meal-photo{
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000;
+        
+    }
+
+    .meal-photo img{
+          opacity: 0.7;
+          width: 100%;
+          height: auto;
+          transform: scale(1.15);
+          transition: transform 0.5s, opcaity 0.5s;
+
+    }
+
+    .work-step div{
+        color: #cf6d17;
+        border: 2px solid #cf6d17;
+        display: inline-block;
+        border-radius: 50%;
+       
+       
+       
+
+    }
+    .work-step div{
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 11.5px;
+        font-size: 120%;
+    }
+
+    
+
+     .selectoin-steps, h2, p{
+        color:  rgb(107, 107, 107);
+        padding: 15px;
+        padding-left: 15px;
+        
+        
+    }
+
+
+    .btn-app:link, .btn-app:visited{
+        border: 0;
+    }
+
+
+
+    .btn-app img{
+         width: auto;
+         height: 50px;
+         margin-right: 10px;
+      }
+
+    
+    
+
+
+    .selection-cities, h3, img{
+        display: flex;
+        color:  rgb(107, 107, 107);
+        height: 150px;
+        width: 150px;
+    
+        
+    }
+
+    
+    
+       
+    </style>
+    
+
+     <header class="header">
+           <nav class="nav-bar">
+            <div class="logo">
+            <div class="hover">
+            <div class="row">
+                <img src="OmniFoodlogo-white-clear.png" alt="" class="logo">
+
+                <ul class="main-nav js main-nav">
+                    <ul class="horizontal-list">
+                    <li>
+                        <a href="#features">Food Delivery</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#works">How It Works</a>
+                    </li>
+                
+                    <li>
+                        <a href="#cities">Our Cities</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#plans">Sign up</a>
+                    </li>
+                    </ul>
+                <a class="mobile-nav-icon js - - nav-icon">
+                    <i class="ion-navicon-round"></i>                
+                </a>
+        </div>
+     </nav>
+
+    <div class="hero-text-box">
+        <h1>Goodbye Junk Food. <br>Hello Super Healthy Meals</h1>
+        <br>
+        <a href="#" class="btn btn-full">I'm hungry</a>
+        <a href="#" class="btn btn-ghost">Show me more</a>
+        </div>
+
+    </header>
+
+    <selection class="section-features js- -section features" id="features">
+     <div class="row">
+        <h2>GET FOOD FAST - NOT FAST FOOD</h2>
+     </div>
+        <div class="secton-2-body">
+            <br>
+            <br>
+            <br>
+        <p class="long copy">
+            Hello, we’re Omnifood, your new premium food delivery service. 
+            <br>
+            We know you’re always busy. No time for cooking.
+            <br>
+            So let us take care of that,
+             we’re really good at it, we promise!
+        </p>
+      </div>
+
+    <div class="row js- -wp-1 animated fadeIn">
+      <div class="col span-1-of-4 box">
+        <i class="ion-ios-infinite-outline icon big">
+     </i>
+     <img src="InfinityLogo-Icon2.png" class="center">
+     <br>
+     <br>
+     <h3>Up to 365 days/year</h3>
+     <p>Never cook again! We really mean that.
+        Our subscription plans include up to 365 days/year coverage. 
+        You can also choose to order more flexibly if that's your style.</p>
+    </div>
+
+      <div class="col span-1-of-4 box">
+       <img src="StopWatch-Icon.png" class="center">
+        <i class="ion-ios-stopwatch-outline icon big">
+        </i>
+
+        <br>
+        <br>
+        <h3>Ready in 20 minutes</h3>
+        <p>You're only twenty minutes away from your delicious
+           and super healthy meals delivered right to your home. 
+           We work with the best chefs in each town to ensure that you're 100% happy.
+        </p>
+        </div>
+
+      <div class="col span-1-of-4 box">
+        <i class="ion-ios-nutrition-outline icon big">
+        </i>
+        <img src="CarrotLogo-Icon3.jpg">
+        <br>
+        <br>
+        <h3>100% organic
+        </h3>
+        <p>All our vegetables are fresh, organic and local. Animals are raised 
+            without added hormones or antibiotics.
+             Good for your health, the environment, and it also tastes better!
+            </p>
+      </div>
+
+      <div class="col span-1-of-4 box">
+        <i class="ion-ios-cart-outline icon big">
+        </i>
+        <img src="ShoppingCart-Icon2.png" class="center">
+        <br>
+        <br>
+        <h3>Order anything</h3>
+        <p>We don't limit your creativity, which means you can order whatever you feel like. 
+            You can also choose from our menu containing over 100 delicious meals. 
+            It's up to you!
+        </p>
+      </div>
+    </div>
+   </selection>
+   <br>
+   <br>
+   <br>
+
+      
+    <selection class="section-meals">
+         <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic1.jpg" alt="Egg bowl">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic2.jpg" alt="Margarita Pizza">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic3.jpg" alt="Chicken with asperagus and carrots">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <li>
+                        <img src="OmniGrid-Pic4.jpg" alt="Pumpkin and Squash Soup">
+                    </li>
+                </figure>
+            </li>
+         </ul>
+         <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic5.jpg" alt="Steak and asperagus">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic6.jpg" alt="Egg sandwhich">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic7.jpg" alt="Cheeseburger with soggy unseasoned fries">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="OmniGrid-Pic8.jpg" alt="Random nuts and fruits with yogurt?">
+                </figure>
+            </li>
+
+         </ul>
+        </selection>
+        <br>
+        <br>
+        <br>
+
+      <selection class="selcection-steps id=works">
+        <div class="row">
+            <h2>How it works- Simple 1, 2, 3</h2>
+        </div>
+        <div class="col-span-1-of-2 steps-box">
+            <img src="OmniApp-iPhone.png" alt="Omni App on Iphone">
+            class="app-screen js--wp-2 animated fadeInUp">
+        </div>
+        <div class="col-span-1-of-2 steps-box">
+            <div class="work-step">
+                <div>1</div>
+                <p>Choose the subscription plan that best fits
+                 your needs and sign up today.
+                </p>
+            </div>
+        <div class="work-step">
+            <div>2</div>
+            <p>Order your delicious meal using our mobile app or website.
+             Or you can even call us!
+            </p>
+        </div>
+        <div class="work-step">
+            <div>3</div>
+            <p>Enjoy your meal after less than 20 minutes.
+             See you the next time!
+            </p>
+        </div>
+        <a href="a" class="btn-app">
+            <img src="Omni-app-ios.svg" alt="Apple App Store Button">
+        </a>
+        <a href="a" class="btn-app">
+            <img src="Omni-app-android.png" alt="Android Play store Button">
+        </a>
+     </selection>
+     <br>
+     <br>
+     <br>
+     <br>
+
+
+
+     <selction class=" section-cities" id="cities">
+        <div class="row">
+            <h2>We're currently in these cities</h2>
+        </div>
+        <div class="row js- -wp-3 animated fadeIn">
+            <div class="col span -1-of-4 box">
+                <img src="Omnicity-Lisborn.jpg" alt="Lisbon">
+                  <h3>Lisbon</h3>
+                  <div class="city-feature">
+                  <i class="ion-ios-person icon-small">
+                   1600+ happy eaters
+                  </i>
+                  </div>
+                  <div class="city-feature">
+                  <i class="ion-ios-star icon small"></i>
+                    <p>60+ top chefs</p>
+                  <div class="city-feature">
+                  <i class="ion-social-twitter icon small"></i>
+                  <a href="#">@OmniFood_lx</a>
+                 </div>
+            </div>
+
+            <div class="col span -1-of-4 box">
+                <img src="OmniCity-San-Francisco.jpg" alt="San Francisco">
+                <h3>San Francisco</h3>
+                <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                  <p>3700+ happy eaters</p>
+                </div>
+                <div class="city-feature">
+                <i class="ion-ios-star icon small"></i>
+                  <p>160+ top chefs</p>
+                  <div class="city-feature">
+                    <i class="ion-social-twitter icon small"></i>
+                    <a href="#">@OmniFood_lx</a>
+                </div>
+            </div>
+
+            <div class="col span -1-of-4 box">
+                <img src="OmniCity-Berlin.jpg" alt="Berlin">
+                <h3>Berlin</h3>
+                <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                  <p>2300+ happy eaters</p>
+                </div>
+                <div class="city-feature">
+                  <i class="ion-ios-star icon small"></i>
+                  <p>110+ top chef</p>
+                  <div class="city-feature">
+                    <i class="ion-social-twitter icon small"></i>
+                    <a href="#">@OmniFood_lx</a>
+                </div>
+            </div>
+
+
+            <div class="col span -1-of-4 box">
+                <img src="OmniCity-London.jpg" alt="London">
+                <h3>London</h3>
+                <div class="city-feature">
+                <i class="ion-ios-person icon-small"></i>
+                  <p>1200+ happy eaters</p>
+                </div>
+                <div class="city-feature">
+                <i class="ion-ios-star icon small"></i>
+                  <p>50+ top chefs</p>
+                <div class="city-feature">
+                    <i class="ion-social-twitter icon small"></i>
+                    <a href="#">@OmniFood_lx</a>
+                </div>
+         </div>
+     </selction>
+
+
+
+
+
+
+   
+
+
+</body>   
+</html>
